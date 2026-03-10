@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bargain Plumbing Palm Beach | West Palm Beach Plumber</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background: #f4f7fb; color: #333; line-height: 1.6; }
+        header { background: #0b63f6; color: white; padding: 18px 40px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .call-header { background: white; color: #0b63f6; padding: 10px 18px; border-radius: 6px; font-weight: 600; text-decoration: none; transition: 0.3s; }
+        .call-header:hover { background: #e2e8f0; }
+        
+        .hero { height: 85vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("https://images.unsplash.com/photo-1585704032915-c3400ca199e7") center/cover; display: flex; align-items: center; justify-content: center; text-align: center; color: white; }
+        .hero-content { max-width: 700px; padding: 20px; margin: 0 auto; }
+        .hero h1 { font-size: 48px; margin-bottom: 20px; }
+        .hero p { font-size: 20px; margin-bottom: 30px; }
+        
+        .cta { background: #0b63f6; padding: 16px 32px; border-radius: 8px; font-size: 20px; color: white; text-decoration: none; font-weight: 600; transition: 0.3s; display: inline-block; }
+        .cta:hover { background: #094eb8; transform: translateY(-2px); }
+        
+        .section { padding: 70px 20px; max-width: 1100px; margin: auto; }
+        .section h2 { text-align: center; margin-bottom: 50px; font-size: 32px; }
+        
+        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+        .service { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.05); text-align: center; transition: 0.3s; }
+        .service:hover { transform: translateY(-5px); }
+        
+        /* Inline SVG styling ensuring perfect center alignment */
+        .service-icon { 
+            width: 60px; 
+            height: 60px;
+            display: block; 
+            margin: 0 auto 15px auto; 
+            stroke: #0b63f6;
+            stroke-width: 2;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+        
+        .reviews { background: white; border-radius: 15px; }
+        .review { max-width: 800px; margin: 20px auto; background: #f9f9f9; padding: 25px; border-radius: 10px; border-left: 5px solid #0b63f6; text-align: left; }
+        
+        form { max-width: 600px; margin: 30px auto; display: flex; flex-direction: column; gap: 15px; }
+        input, textarea { padding: 15px; border-radius: 6px; border: 1px solid #ddd; font-size: 16px; font-family: 'Poppins', sans-serif; }
+        button { background: #0b63f6; color: white; border: none; padding: 18px; font-size: 18px; border-radius: 6px; cursor: pointer; font-weight: 600; transition: 0.3s; }
+        button:hover { background: #094eb8; }
+        
+        .success-message {
+            display: none;
+            max-width: 600px;
+            margin: 30px auto;
+            background: #d4edda;
+            color: #155724;
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px solid #c3e6cb;
+            text-align: center;
+        }
+        .success-message h3 { margin-bottom: 10px; }
+
+        .map-container { margin-top: 40px; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        footer { background: #1a1a1a; color: white; text-align: center; padding: 40px 20px; }
+        .sticky-call { position: fixed; bottom: 20px; right: 20px; background: #0b63f6; color: white; padding: 15px 25px; border-radius: 50px; font-weight: 600; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 999; }
+        
+        @media (max-width: 768px) {
+            header { flex-direction: column; gap: 10px; padding: 15px; }
+            .hero h1 { font-size: 32px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>Bargain Plumbing Palm Beach</h2>
+    <a class="call-header" href="tel:5612205074">(561) 220-5074</a>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Professional Plumbing in West Palm Beach</h1>
+        <p>Expert service, transparent pricing, and 24/7 emergency support for your home or business.</p>
+        <a class="cta" href="tel:5612205074">Get a Free Estimate</a>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Our Expert Services</h2>
+    <div class="services">
+        <div class="service">
+            <svg viewBox="0 0 24 24" class="service-icon">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+            </svg>
+            <h3>Drain Cleaning</h3>
+            <p>Clearing tough clogs and maintaining your pipes for long-term flow.</p>
+        </div>
+        <div class="service">
+            <svg viewBox="0 0 24 24" class="service-icon">
+                <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path>
+            </svg>
+            <h3>Water Heaters</h3>
+            <p>Repair and installation of traditional and tankless water heaters.</p>
+        </div>
+        <div class="service">
+            <svg viewBox="0 0 24 24" class="service-icon">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+            </svg>
+            <h3>Emergency Repair</h3>
+            <p>Burst pipes or major leaks? We are available when you need us most.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section reviews">
+    <h2>What Your Neighbors Say</h2>
+    <div class="review">
+        <p>⭐⭐⭐⭐⭐</p>
+        <p>"Bargain Plumbing arrived on time and fixed my leaking shower valve perfectly. Very professional!"</p>
+        <strong>- Olivia Alexandria</strong>
+    </div>
+    <div class="review">
+        <p>⭐⭐⭐⭐⭐</p>
+        <p>"The best plumbers in West Palm Beach. They handled our drain issue quickly and for a great price."</p>
+        <strong>- Zander Marshall</strong>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Contact Us</h2>
+    
+    <form id="contactForm" onsubmit="showThankYou(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <textarea placeholder="How can we help you?" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <div id="successMessage" class="success-message">
+        <h3>Thank You!</h3>
+        <p>Your message has been sent successfully. We will be in touch with you shortly.</p>
+    </div>
+    
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114400.12345678!2d-80.15!3d26.71!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d8d5cc01933613%3A0x60032e578c792f44!2sWest%20Palm%20Beach%2C%20FL!5e0!3m2!1sen!2sus!4v1234567890" 
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Bargain Plumbing Palm Beach</p>
+    <p>West Palm Beach, Florida | (561) 220-5074</p>
+</footer>
+
+<a class="sticky-call" href="tel:5612205074">Call (561) 220-5074</a>
+
+<script>
+    function showThankYou(event) {
+        event.preventDefault(); 
+        document.getElementById('contactForm').style.display = 'none'; 
+        document.getElementById('successMessage').style.display = 'block'; 
+    }
+</script>
+
+</body>
+</html>
